@@ -5,12 +5,10 @@
   text-align: center;
 }
 
-
 body {
-  background-color: linear-gradient(to left, #aa58ed);
+  background: linear-gradient(to left, #aa58ed);
   background-size: 400%;
   animation: cambiarColor 2s ease-in alternate infinite;
-
 }
 
 @keyframes cambiarColor {
@@ -19,7 +17,9 @@ body {
   }
 
   100% {
-    transform: rotate(360deg);
+
+    background-position: 75% 50%;
+
   }
 }
 
@@ -38,5 +38,5 @@ input {
   padding: 10px;
   border-radius: 20px;
   border: none;
-  outline: none
+  outline: none;
 }

@@ -1,12 +1,17 @@
-import React from 'react'
-import '../Task.css'
+import React, { useState } from "react";
+import "../components/Task.css";
 
-const Task = () => {
+
+
+const Task = ({ tarea, borrarTarea }) => {
+    const [completada, setCompletada] = useState(false)
+
     return (
-        <div>
-            <h2>desde task</h2>
-        </div>
-    )
-}
+        <div className={completada ? "containerTarea containerTareaCompletada"}>
+            <h2>Desde Task Component</h2>
+        </div >
+    );
+};
 
-export { Task }
+export default Task;
+
