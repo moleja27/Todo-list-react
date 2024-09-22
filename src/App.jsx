@@ -38,12 +38,11 @@ function App() {
       <h2>Todo List</h2>
       <Form HandleChange={HandleChange} tarea={tarea} addTask={addTask} />
 
-      {/* Map over the `tareas` array to render each task */}
-      {tareas.map((tareaItem) => (
+      {tareas.map(tarea => (
         <Task
-          key={tareaItem.id}
-          id={tareaItem.id}
-          tarea={tareaItem.tarea}
+          key={tarea.id}
+          id={tarea.id}
+          tarea={tarea}
           borrarTarea={borrarTarea}
         />
       ))}
