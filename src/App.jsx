@@ -39,8 +39,10 @@ function App() {
         addTask={addTask}
 
       />
+      <Task />
     </>
   )
 }
 
 export default App
+
