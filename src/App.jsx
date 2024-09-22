@@ -24,7 +24,8 @@ function App() {
       completada: false,
     };
 
-    const totalTareas = setTareas([nuevaTarea, ...tareas]);
+
+    setTareas([nuevaTarea, ...tareas]);
     setTarea("");
   };
 
@@ -38,7 +39,7 @@ function App() {
       <h2>Todo List</h2>
       <Form HandleChange={HandleChange} tarea={tarea} addTask={addTask} />
 
-      {tareas.map(tarea => (
+      {tareas.map((tarea) => (
         <Task
           key={tarea.id}
           id={tarea.id}
